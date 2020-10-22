@@ -1,0 +1,42 @@
+/* By Athlon Front-End Team */
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* libs */
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~animate.css";
+
+
+body {
+  font-family: 'Gilroy', serif;
+  background-color: $body-background-color;
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
+}
+
+/* components */
+@import "components/logo";
+
+/* partials */
+@import "partials/preloader";
+@import "partials/header";
+@import "partials/home";
+@import "partials/about";
+@import "partials/services";
+@import "partials/clients";
+@import "partials/portfolio";
+@import "partials/reviews";
+@import "partials/footer";
+@import "partials/mobile-menu";
+@import "partials/feedback.scss";
+
+

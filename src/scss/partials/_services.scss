@@ -1,0 +1,300 @@
+.section-services {
+  background-color: $body-background-color;
+  padding: 120px 0px;
+
+  @media (max-width: 1400px) {
+    padding: 60px 0;
+  }
+
+  .swiper-pagination{
+    left: 1050px !important;
+    top: 69px;
+    text-align: left;
+    width: unset !important;
+
+    @media (max-width: 1400px) {
+      left: 1027px !important
+    }
+    @media (max-width: 1200px) {
+      left: 965px !important
+    }
+    
+
+    &-bullet{
+      width: 445px;
+      background: none;
+      opacity: 1;
+      height: 24px;
+
+      @media (max-width: 1400px) {
+        width: 360px;
+      }
+
+      @media (max-width: 1200px) {
+        width: 320px;
+      }
+
+      &-active::after {
+        width: 100%;
+      }
+    }
+  }
+  
+}
+
+.services-title {
+  font-size: 70px;
+  margin-bottom: 70px;
+  font-weight: 800;
+
+  @media (max-width: 576px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 1400px) {
+    margin-bottom: 40px;
+  }
+}
+
+.services {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.tab {
+
+  &-item {
+    cursor: pointer;
+    position: relative;
+
+    h2 {
+      position: relative;
+      z-index: 99;
+
+      @media (max-width:1400px) {
+        font-size: 15px;
+    
+      }
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      width: 0%;
+      height: 34px;
+      position: absolute;
+      margin-top: -17px;
+      top: 50%;
+      left: -10px;
+      z-index: 1;
+      background-color: $green;
+      transition: 500ms ease;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px !important;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &-item.active {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width:1400px) {
+    position: absolute;
+    right: 0px;
+    width: 64%;
+
+  }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 700px;
+
+  &-list-bg{
+    width: 1166px;
+    height: 691px;
+    position: absolute;
+    left: -467px;
+    top: -50px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+    }
+
+    @media (max-width:1400px) {
+      width: 1166px;
+      height: 600px;
+      right: -170px;
+      top: -25px;
+    }
+  }
+
+  &-list {
+    position: absolute;
+    left: 87px;
+    top: 0px;
+    width: 989px;
+    height: 619px;
+    padding-left: 12px;
+
+    @media (max-width:1400px) {
+      width: 920px;
+      height: 523px;
+      left: 164px;
+      padding-left: 0;
+    }
+  }
+
+  &-item {
+    position: relative;
+    margin-top: 56px;
+    overflow: hidden;
+    @media (max-width:1400px) {
+      margin-top: 49px;
+    }
+
+  }
+
+  
+
+  &-img {
+    height: 562px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+    @media (max-width:1400px) {
+      width: 921px;
+      height: 487px;
+    }
+
+  }
+
+  &-info {
+    position: absolute;
+    top: 530px;
+    right: 355px;
+    z-index: 3;
+
+    @media (max-width: 1400px) {
+      top: 440px;
+      right: 418px;
+    }
+    @media (max-width: 1200px) {
+      right: 294px;
+    }
+
+    &__text {
+      background: #0659b1;
+      display: none;
+      padding: 40px;
+      font-size: 20px;
+      color: #fff;
+      width: 550px;
+      box-shadow: 0px 6px 14px rgba(0,0,0,0.3);
+    }
+
+    &__text.active {
+      display: block;
+      animation: textAnimation 1s;
+    }
+  }
+}
+
+.content-video{
+    height: 100%;
+    overflow: hidden;
+
+  video{
+    height: 600px;
+
+    @media (max-width:1400px) {
+      height: 560px;
+      width: 990px;
+    }
+
+  }
+}
+
+#video{
+    height: 548px;
+    width: 977px;
+
+  @media (max-width:1400px) {
+    height: 472px;
+  }
+}
+
+
+@keyframes textAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+.service {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &-content {
+    width: 80%;
+    background: #acf900;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+  }
+
+  &-title {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.services-slider {
+  display: none;
+
+  @media (max-width: 992px) {
+    display: block;
+  }
+}
+
+.services-swiper{
+  position: static !important;
+}
+
+
+._6atl{
+  height: 380px;
+  bottom: 71px;
+}

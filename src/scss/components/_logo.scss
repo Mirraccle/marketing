@@ -1,0 +1,54 @@
+.logo {
+
+  img {
+    width: 100%;
+  }
+}
+
+.call-animation {
+  background: #1c313a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 94px;
+  z-index: 9999;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: solid 5px #1c313a;
+  -webkit-animation: play 2s ease infinite;
+          animation: play 2s ease infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff; 
+  }
+}
+
+@-webkit-keyframes play {
+  0% {
+    transform: scale(1); }
+  15% {
+    box-shadow: 0 0 0 5px rgba(116, 112, 104, 0.56); }
+  25% {
+    box-shadow: 0 0 0 10px rgba(58, 58, 58, 0.56), 0 0 0 20px rgba(87, 87, 86, 0.45); }
+  25% {
+    box-shadow: 0 0 0 15px rgba(109, 106, 106, 0.6), 0 0 0 20px rgba(108, 105, 109, 0.45); } 
+  }
+
+@keyframes play {
+  0% {
+    transform: scale(1); }
+  15% {
+    box-shadow: 0 0 0 5px rgba(116, 112, 104, 0.56); }
+  25% {
+    box-shadow: 0 0 0 10px rgba(58, 58, 58, 0.56), 0 0 0 20px rgba(87, 87, 86, 0.45); }
+  25% {
+    box-shadow: 0 0 0 15px rgba(109, 106, 106, 0.6), 0 0 0 20px rgba(108, 105, 109, 0.45); } 
+  }

@@ -1,0 +1,178 @@
+.mobile-navigation {
+  background-color: #064387;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding: 20px;
+  z-index: 9999;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+  transform: translateX(-300px);
+  transition: 600ms ease;
+  display: none;
+
+  @media (max-width: 992px) {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  &__header {
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+
+    &:not(last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  &__body {
+    margin-bottom: 30px;
+  }
+
+  &__footer {
+
+  }
+
+  .mobile-socials {
+    color: #fff;
+
+    &__title {
+      font-weight: 500;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &__item {
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      a {
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #fff;
+        }
+      }
+
+    }
+  }
+
+  .mobile-contact {
+    margin-top: 20px;
+    &__title {
+      font-size: 12px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    &__link {
+      color: #fff;
+    }
+  }
+}
+
+.burger {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  right: -70px;
+  top: 20px;
+  cursor: pointer;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+
+  span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -1px;
+    border-radius: 4px;
+    transition: 500ms ease;
+
+    &:after, &:before {
+      display: block;
+      content: '';
+      width: 30px;
+      height: 4px;
+      background-color: #000;
+      position: absolute;
+      border-radius: 4px;
+      transition: 500ms ease;
+    }
+
+    &:after {
+      transform: translateY(8px);
+    }
+
+    &:before {
+      transform: translateY(-8px);
+    }
+  }
+
+}
+
+.main-wrapper {
+  transition: 600ms ease;
+}
+
+body.menu-active {
+
+
+  .mobile-navigation {
+    transform: translateX(0px);
+  }
+
+  .burger {
+
+    span {
+      height: 0px;
+
+      &:after {
+        transform: rotate(40deg);
+      }
+
+      &:before {
+        transform: rotate(-40deg);
+      }
+    }
+  }
+
+  .main-wrapper {
+    transform: translateX(300px);
+  }
+
+  .video-bg {
+    background-color: red;
+    transform: translateX(300px);
+  }
+
+}
+
