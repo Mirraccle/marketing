@@ -65,8 +65,23 @@
   transition: 600ms ease;
 }
 
+#nav-price{
+  opacity: 0;
+  background: $green;
+  color: #fff;
+  transition: 600ms all ease;
+  padding: 5px 10px;
+  a:hover{
+    color: #fff;
+  }
+}
+
 .header.active {
   .header-bg {
+    opacity: 1;
+  }
+
+  #nav-price{
     opacity: 1;
   }
 }

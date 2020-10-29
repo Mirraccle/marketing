@@ -339,39 +339,39 @@
 
         .slider-wrapper{
           position: absolute;
-          top: 46px;
-          width: 487px;
-          height: 642px;
+          top: 30px;
+          width: 469px;
+          height: 674px;
 
           @media (max-width: 1600px) {
-            width: 397px;
-            height: 525px;
-            top: 36px;
+            width: 392px;
+            height: 556px;
+            top: 21px;
           }
           @media (max-width: 1400px) {
-            width: 309px;
-            height: 409px;
-            top: 29px;
+            width: 306px;
+            height: 435px;
+            top: 15px;
           }
           @media (max-width: 1000px) {
-            width: 244px;
-            height: 323px;
-            top: 22px;
+            width: 241px;
+            height: 341px;
+            top: 13px;
           }
           @media (max-width: 767px) {
-            top: 19px;
-            width: 199px;
-            height: 262px;
+            top: 10px;
+            width: 197px;
+            height: 278px;
           }
           @media (max-width: 600px) {
-            width: 133px;
-            height: 176px;
-            top: 12px;
+            width: 130px;
+            height: 185px;
+            top: 7px;
           }
           @media (max-width: 450px) {
-            height: 121px;
-            width: 91px;
-            top: 8px;
+            height: 127px;
+            width: 89px;
+            top: 5px;
           }
 
           img{
@@ -614,9 +614,10 @@
         margin-left: 120px;
 
         @media (max-width:767px) {
-          margin: 0;
-          width: 100%;
-          margin-top: 50px;
+          margin-left: 50px;
+        }
+        @media (max-width:450) {
+          margin-left: 20px;
         }
         .style-phone{
           display: flex;
@@ -641,7 +642,7 @@
             height: 300px;
           }
           @media (max-width: 450px) {
-            height: 137px;
+            height: 250px;
           }
           }
           &-inner{
@@ -669,8 +670,8 @@
               width: 130px;
             }
             @media (max-width:450px) {
-              top: 4px;
-              width: 60px;
+              top: 7px;
+              width: 110px;
             }
 
             img{
@@ -690,7 +691,6 @@
         }
 
         @media (max-width:767px) {
-          width: 100%;
           display: flex;
           justify-content: center;
         }
@@ -712,12 +712,16 @@
                 font-size: 48px;
               }
               @media (max-width:1400px) {
-                font-size: 30px;
-              }
-              @media (max-width:1400px) {
                 font-size: 25px;
                 line-height: 30px;
-
+              }
+              @media (max-width:600px) {
+                font-size: 20px;
+                line-height: 20px;
+              }
+              @media (max-width:450px) {
+                font-size: 16px;
+                line-height: 16px;
               }
             }
             @media (max-width:1600px) {
@@ -726,6 +730,15 @@
             @media (max-width:1400px) {
               margin-bottom: 20px;
             }
+
+            @media (max-width:767px) {
+              margin-bottom: 15px;
+            }
+            @media (max-width:450px) {
+              margin-bottom: 10px;
+            }
+            
+
           }
           .style-social-links{
             margin-bottom: 40px;
@@ -781,6 +794,16 @@
                 font-size: 13px;
                 line-height: 15px;
               }
+              @media (max-width:767px) {
+                margin-bottom: 5px;
+                font-size: 11px;
+                line-height: 11px;
+              }
+              @media (max-width:450px) {
+                margin-bottom: 5px;
+                font-size: 8px;
+                line-height: 8px;
+              }
             }
             &-content{
               text-transform: uppercase;
@@ -804,6 +827,16 @@
                 font-size: 20px;
                 line-height: 36px;
               }
+              @media (max-width:767px) {
+                margin-bottom: 14px;
+                font-size: 17px;
+                line-height: 20px;
+              }
+              @media (max-width:450px) {
+                margin-bottom: 9px;
+                font-size: 12px;
+                line-height: 18px;
+              }
             }
           }
           .style-colours-group{
@@ -815,6 +848,16 @@
               @media (max-width:991px) {
                 height: 24px;
                 width: 290px;
+              }
+
+              @media (max-width:600px) {
+                height: 20px;
+                width: 190px;
+              }
+              @media (max-width:450px) {
+                height: 15px;
+                width: 160px;
+                border-radius: 4px;
               }
 
               &:not(:last-child){
@@ -851,20 +894,20 @@
           justify-content: center;
 
           .motion-ipad{
-            height: 690px;
+            height: 676px;
             width: 1166px;
             z-index: 3;
 
             @media (max-width:1400px) {
-              height: 560px;
+              height: 504px;
               width: 850px;
             }
             @media (max-width:991px) {
-              height: 400px;
+              height: 368px;
               width: 620px;
             }
             @media (max-width:600px) {
-              height: 200px;
+              height: 184px;
               width: 310px;
             }
           }
@@ -874,23 +917,24 @@
             top: 0px;
             overflow: hidden;
             width: 996px;
-            height: 625px;
+            height: 604px;
             padding-left: 12px;
 
             @media (max-width:1400px) {
-              height: 510px;
+              height: 458px;
               width: 727px;
               padding-left: 10px;
             }
             @media (max-width:991px) {
               width: 527px;
-              height: 359px;
+              height: 332px;
               padding-left: 6px;
             }
 
             @media (max-width:600px) {
               width: 269px;
-              height: 180px;
+              height: 167px;
+              padding-left: 4px;
             }
 
             .motion-content-item{
@@ -898,28 +942,28 @@
               position: relative;
               overflow: hidden;
               @media (max-width:1400px) {
-                margin-top: 60px;
+                margin-top: 54px;
               }
               @media (max-width:991px) {
-                margin-top: 42px;
+                margin-top: 39px;
               }
               @media (max-width:600px) {
-                margin-top: 21px;
+                margin-top: 19px;
               }
               
               .motion-video{
                 overflow: hidden;
                 video{
-                  height: 600px;
+                  height: 547px;
 
                   @media (max-width:1400px) {
-                    height: 442px;
+                    height: 397px;
                   }
                   @media (max-width:991px) {
-                    height: 317px;
+                    height: 290px;
                   }
                   @media (max-width:600px) {
-                    height: 159px;
+                    height: 146px;
                   }
                 }
               }
