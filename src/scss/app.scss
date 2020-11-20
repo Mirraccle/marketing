@@ -40,3 +40,7 @@ html{
 @import "partials/feedback.scss";
 
 
+#canvas{
+  position: fixed;
+  z-index: 1;
+}
