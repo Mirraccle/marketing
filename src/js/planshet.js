@@ -1,4 +1,5 @@
 let menu = [
+    'ФИРМЕННЫЙ СТИЛЬ',
     'МАРКЕТИНГОВЫЕ ИССЛЕДОВАНИЯ',
     'SMM – ПРОДВИЖЕНИЕ',
     'РАЗРАБОТКА САЙТА',
@@ -7,14 +8,15 @@ let menu = [
     'РЕМАРКЕТИНГ',
     'БРЕНДИНГ',
     'НЕЙМИНГ',
-    'ФИРМЕННЫЙ СТИЛЬ',
     'MOTION – АНИМАЦИИ',
     'НАРУЖНАЯ РЕКЛАМА',
     'АВТОМАТИЗАЦИЯ БИЗНЕСА',
     'РАЗРАБОТКА СТИКЕРОВ',
+    'ВИДЕО - ПРОДАКШН'
 ]
 
 let type = [
+    'style',
     'marketing',
     'smm',
     'website',
@@ -23,11 +25,11 @@ let type = [
     'remarketing',
     'branding',
     'naming',
-    'style',
     'motion',
     'out',
     'avtomatic',
-    'sticker'
+    'sticker',
+    'studio'
 ]
 
 import 'swiper/css/swiper.min.css';

@@ -40,12 +40,27 @@
   opacity: 0.4;
   position: absolute;
   right: 80px;
-  bottom: 0px;
+  bottom: 0px; 
 
   @media (max-width: 576px) {
     width: 300px;
     height: 300px;
     opacity: 0.1;
     right: 0px;
+  }
+}
+
+.career-button{
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  
+  a{
+    background: #94d600;
+    color: #fff;
+    transition: 600ms all ease;
+    padding: 5px 10px;
+    color: #fff;
+    transition: 300ms ease;
   }
 }

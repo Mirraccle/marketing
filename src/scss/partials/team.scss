@@ -1,0 +1,174 @@
+.section-team{
+    padding: 100px 0;
+    background-color: $green;
+    color: #fff;
+
+    .team-title{
+        margin-bottom: 100px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 70px;
+        line-height: 80px;
+        text-align: center;
+        @media (max-width: 1000px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 35px;
+        }
+        @media (max-width: 576) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .team__block{
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
+
+        @media (max-width: 1600px) {
+            max-width: 1000px;
+        }
+        @media (max-width: 1200px) {
+            max-width: 700px;
+        }
+        @media (max-width: 900px) {
+            max-width: 350px;
+        }
+        @media (max-width: 400px) {
+            padding: 0 20px;
+        }
+        &__wrapper{
+
+        }
+        .member{
+            .shadow{
+
+            }
+            
+            &__wrapper{
+
+            }
+            &__photo{
+                padding: 30px 0;
+                position: relative;
+                background: #FFFFFF;
+                border-radius: 25px;
+                height: 440px;
+
+                @media (max-width: 900px) {
+                    height: 380px;
+                }
+
+                .member__description{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #000000;
+
+                    @media (max-width: 900px) {
+                        font-size: 12px;
+                    }
+                }
+                .blue{
+                    background: $blue;
+                }
+                &-img{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 1;
+                    transition: .9s ease;
+
+                    .filter{
+                        filter: blur(60px);
+                        position: absolute;
+                        height: 150px;
+                        width: 150px;
+                        background: linear-gradient(0deg, #8C8C8C, #8C8C8C);
+                    }
+
+                    img{
+                        border-radius: 50%;
+                        position: relative;
+                        height: 160px;
+                        width: 160px;
+                    }
+                }
+            }
+            &__text{
+                padding: 0 30px;
+                margin-top: 27px;
+
+                &-name{
+                    font-weight: 500;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 33px;
+                    color: #000;
+
+                    @media (max-width: 900px) {
+                        font-size: 22px;
+                    }
+                }
+                &-job{
+                    margin: 4px 0;
+                    margin-bottom: 22px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: #646464;
+
+                    @media (max-width: 900px) {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .team-slider{
+            position: static !important;
+
+            .swiper-pagination{
+                bottom: -47px;
+
+                &-bullet{
+                    background-color: #fff;
+                    opacity: .6;
+                    height: 16px;
+                    width: 16px;
+                }
+                &-bullet-active{
+                    opacity: 1;
+                }
+            }
+
+            .swiper-wrapper{
+                transition-timing-function:linear!important;
+            }
+        }
+
+        .swiper-button-next{
+            right: -100px;
+            color: #fff;
+
+            @media (max-width: 570px) {
+                right: -40px;
+                display: none;
+            }
+        }
+        .swiper-button-prev{
+            left: -100px;
+            color: #fff;
+
+            @media (max-width: 570px) {
+                left: -40px;
+                display: none;
+            }
+        }
+        
+    }
+}

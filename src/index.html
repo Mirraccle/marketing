@@ -58,7 +58,7 @@
     <!-- End Facebook Pixel Code -->
 </head>
 <body>
-    <canvas id="canvas"></canvas>
+    
 <!-- <section id="preloader-section">
     <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
@@ -167,7 +167,8 @@
             </div>
             <div class="mobile-contact">
                 <div class="mobile-contact__title">Контакты:</div>
-                <a href="tel:+998 97 588 88 55" class="mobile-contact__link">+998 97 588 88 55</a>
+                <a href="tel:+998 97 588 88 55" class="mobile-contact__link">+998 97 588 88 55</a><br>
+                <a href="tel:+998 97 55 888 55" class="mobile-contact__link">+998 97 55 888 55</a>
             </div>
         </div>
     </div>
@@ -277,6 +278,9 @@
                         реализации Ваших проектов
                     </li>
                 </ul>
+                <div class="career-button">
+                    <a target="_blank" href="https://t.me/mc_career">Карьера в MC</a>
+                </div>
             </div>
             <div class="about-img" style="background-image: url(images/content/Mockup.png)"></div>
         </div>
@@ -323,6 +327,12 @@
                             <div class="content-list">
                                 <div class="swiper-container services-swiper">
                                     <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="content-item">
+                                                <div class="content-img"
+                                                    style="background-image: url(images/content/services/style.jpg)"></div>
+                                            </div>
+                                        </div>
                                         <div class="swiper-slide">
                                             <div class="content-item active">
                                                 <div class="content-img"
@@ -372,12 +382,6 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="content-item">
-                                                <div class="content-img"
-                                                    style="background-image: url(images/content/services/style.jpg)"></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
                                             <div class="content-item" id="video">
                                                 <div class="content-video">
                                                     <video src="images/content/mc4.mp4" preload="auto" autoplay muted loop></video>
@@ -400,6 +404,12 @@
                                             <div class="content-item">
                                                 <div class="content-img"
                                                     style="background-image: url(images/content/services/sticker.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="content-item">
+                                                <div class="content-img"
+                                                    style="background-image: url(images/content/services/studio.jpg)"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -454,11 +464,24 @@
                                     <div class="content-info__text" data-type="sticker">
                                         <p>Разработка индивидуальных стикеров</p>
                                     </div>
+                                    <div class="content-info__text" data-type="studio">
+                                        <p>Разработка рекламных, имиджевых роликов</p>
+                                    </div>
+                                    
                         </div>
                     </div>
                 </div>
             <div class="swiper-container services-slider">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service"
+                             style="background-image: url(images/content/services/style.jpg)">
+                            <div class="service-content">
+                                <h4 class="service-title">ФИРМЕННЫЙ СТИЛЬ</h4>
+                                <p>Создание уникального лица бренда.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="swiper-slide">
                         <div class="service"
                              style="background-image: url(images/content/services/marketing.jpg)">
@@ -537,15 +560,6 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="service"
-                             style="background-image: url(images/content/services/style.jpg)">
-                            <div class="service-content">
-                                <h4 class="service-title">ФИРМЕННЫЙ СТИЛЬ</h4>
-                                <p>Создание уникального лица бренда.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="service"
                              style="background-image: url(images/content/services/motion.jpg)">
                             <div class="service-content">
                                 <h4 class="service-title">MOTION – АНИМАЦИИ</h4>
@@ -579,6 +593,15 @@
                             <div class="service-content">
                                 <h4 class="service-title">РАЗРАБОТКА СТИКЕРОВ</h4>
                                 <p>Разработка индивидуальных стикеров</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service"
+                             style="background-image: url(images/content/services/studio.jpg)">
+                            <div class="service-content">
+                                <h4 class="service-title">Видео - продакшн</h4>
+                                <p>Разработка рекламных, имиджевых роликов</p>
                             </div>
                         </div>
                     </div>
@@ -616,10 +639,10 @@
                             <li class="partner" data-filter="website-spina" id="website-spina">
                                 <img src="images/content/portfolio/logos/spina.png" alt="">
                             </li>
-                            <li class="partner active" data-filter="website-building" id="website-building">
+                            <li class="partner active" data-filter="website-bp" id="website-building">
                                 <img src="images/content/portfolio/logos/building.png" alt="">
                             </li>
-                            <li class="partner" data-filter="website-elephant" id="website-elephant">
+                            <li class="partner" data-filter="website-eg" id="website-elephant">
                                 <img src="images/content/portfolio/logos/elephant.png" alt="">
                             </li>
                         </ul>
@@ -684,7 +707,7 @@
             </div>
                 <div class="row justify-content-center">
                     <div class="block active" id="slider-block" data-filter="website">
-                        <div class="sliders-holder">
+                        <!-- <div class="sliders-holder">
                             <div class="swiper-container portfolio-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -715,7 +738,23 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                        </div> -->
+                       <div class="website-pic active" data-filter="website-bp">
+                           <img src="images/content/portfolio/site/bp.png" alt="">
+                       </div>
+                       <div class="website-pic" data-filter="website-eg">
+                            <img src="images/content/portfolio/site/eg.png" alt="">
                         </div>
+                        <div class="website-pic" data-filter="website-pangolin">
+                            <img src="images/content/portfolio/site/pangolin.png" alt="">
+                        </div>
+                        <div class="website-pic" data-filter="website-spina">
+                            <img src="images/content/portfolio/site/spina.png" alt="">
+                        </div>
+
+
                         <div class="portfolio-name-holder">
                             <ul class="portfolio-list active" data-filter="website">
                                 <li class="portfolio-name active" data-filter="website-pangolin"><a href="https://pangolin.uz/">pangolin.uz</a></li>
@@ -801,7 +840,7 @@
                                     <div class="style-phone">
                                         <img class="phone-photo" src="images/content/portfolio/1.png" alt="">
                                         <div class="style-phone-inner">
-                                            <img src="images/content/portfolio/style/kira.PNG" alt="">
+                                            <img src="images/content/portfolio/style/kira.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1056,6 +1095,176 @@
                 
                 
         </section>
+
+    <section id="team" class="section-team">
+        
+            <h2 class="team-title">
+                Команда Marketing Concept
+            </h2>
+            <div class="team__block">
+                <div class="team__block-wrapper">
+                    <div class="swiper-container team-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                 <div class="member">
+                                     <div class="shadow"></div>
+                                     <div class="member__wrapper">
+                                         <div class="member__photo">
+                                            <div class="member__photo-img">
+                                                <div class="filter"></div>
+                                                <img src="./images/content/team/Rinat.png" alt="">
+                                            </div>
+                                            <div class="member__text">
+                                                <div class="member__text-name">
+                                                    Ринат
+                                                </div>
+                                                <div class="member__text-job">
+                                                    Графический дизайнер
+                                                </div>
+                                                <div class="member__description">
+                                                    Наш Владыка графических программ. Перфекционист-художник. Иногда философ, потому как невероятно много читает. Знаток истории искусств и фанат своей работы. Обладатель уникального художественного вкуса и, просто, приятный собеседник!
+                                                </div>
+                                            </div>
+                                         </div>
+                                         
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="member">
+                                    <div class="shadow"></div>
+                                    <div class="member__wrapper">
+                                        <div class="member__photo">
+                                           <div class="member__photo-img">
+                                               <div class="filter"></div>
+                                               <img src="./images/content/team/Aleksey.png" alt="">
+                                           </div>
+                                           <div class="member__text">
+                                               <div class="member__text-name">
+                                                Алексей
+                                               </div>
+                                               <div class="member__text-job">
+                                                СММ-менеджер
+                                               </div>
+                                               <div class="member__description">
+                                                Наш критик, стремящийся к совершенству. По его мнению если нет эффекта WOW, то что-то не так и надо доработать. К себе относится также критично и массу времени уделяет саморазвитию. Все сотрудники ценят его мнение.
+                                                </div>
+                                           </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="swiper-slide">
+                            <div class="member">
+                                <div class="shadow"></div>
+                                <div class="member__wrapper">
+                                    <div class="member__photo">
+                                       <div class="member__photo-img">
+                                           <div class="filter"></div>
+                                           <img src="./images/content/team/Elmurod.png" alt="">
+                                       </div>
+                                       <div class="member__text">
+                                           <div class="member__text-name">
+                                            Элмурод
+                                           </div>
+                                           <div class="member__text-job">
+                                            СММ-менеджер
+                                           </div>
+                                           <div class="member__description">
+                                            Наш энерджайзер. Молодой, талантливый парень, всегда пребывает в отличном настроении и заряжает им всех. Нет границ полета его фантазии и креатива. Каждое Его действии, каждый проект – мощь позитива.
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                       </div>
+                       <div class="swiper-slide">
+                        <div class="member">
+                            <div class="shadow"></div>
+                            <div class="member__wrapper">
+                                <div class="member__photo">
+                                   <div class="member__photo-img">
+                                       <div class="filter"></div>
+                                       <img src="./images/content/team/Jahongir.png" alt="">
+                                   </div>
+                                   <div class="member__text">
+                                       <div class="member__text-name">
+                                        Джахонгир
+                                       </div>
+                                       <div class="member__text-job">
+                                        Верстальщик
+                                       </div>
+                                       <div class="member__description">
+                                        Наш вдумчивый стратег. Любитель шахмат и точных наук. Большую часть времени пребывает в молчании. Но если что-либо сказал, сомнения в правдивости и точности его слов не возникает. Качественно и точно – про Него.
+                                        </div>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                   </div>
+                   <div class="swiper-slide">
+                    <div class="member">
+                        <div class="shadow"></div>
+                        <div class="member__wrapper">
+                            <div class="member__photo">
+                               <div class="member__photo-img">
+                                   <div class="filter"></div>
+                                   <img src="./images/content/team/Dilnura.png" alt="">
+                               </div>
+                               <div class="member__text">
+                                   <div class="member__text-name">
+                                    Дильнура
+                                   </div>
+                                   <div class="member__text-job">
+                                    СММ-менеджер
+                                   </div>
+                                   <div class="member__description">
+                                    Наше нежное создание. Любимица всех клиентов, потому что умеет слушать и слышать. Всегда вежлива. Обладает необъятным воображением. Сочетание мягкости, таланта и ответственности с милой внешностью.
+                                   </div>
+                               </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+               </div>
+               <div class="swiper-slide">
+                <div class="member">
+                    <div class="shadow"></div>
+                    <div class="member__wrapper">
+                        <div class="member__photo">
+                           <div class="member__photo-img">
+                               <div class="filter"></div>
+                               <img src="./images/content/team/Asadbek.png" alt="">
+                           </div>
+                           <div class="member__text">
+                               <div class="member__text-name">
+                                Асадбек
+                               </div>
+                               <div class="member__text-job">
+                                Веб дизайнер
+                               </div>
+                               <div class="member__description">
+                                Наш Львенок. Самый молодой сотрудник, но, нисколько не уступающей в талантливости, широте кругозора и креативе, остальным. Схватывает все новое в реактивном режиме. Вдохновляется зарубежными трендами и предлагает крутые идеи.
+                                </div>
+                           </div>
+                        </div>
+                        
+                    </div>
+                </div>
+           </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
 
     <section id="reviews" class="section-reviews">
         <div class="container">
@@ -1640,7 +1849,7 @@
                                     <div class="review">
                                         <a target="_blank" href="http://ildam-group.uz" class="review__header">
                                             <div class="review__img"
-                                                 style="background-image: url(images/content/reviews/ildam.jpg)"></div>
+                                                 style="background-image: url(images/content/reviews/ildam.JPG)"></div>
                                             <div class="review__author">
                                                 <h4 class="review__title">Умаров Миржалол Мирзохид угли</h4>
                                                 <p>Директор компании ildam.inc</p>
@@ -2367,12 +2576,13 @@
                     <div class="footer-links">
                         <div class="footer-link">
                             <div class="footer-link__title">Адрес:</div>
-                            <a href="https://goo.gl/maps/R6e84Xt7vP6oKQTdA">Яшнободский район,<br>
+                            <a href="https://goo.gl/maps/R6e84Xt7vP6oKQTdA">Яшнабадский район,<br>
                                 ТЦ ATRIUM, ул. Махтумкули 3/6</a>
                         </div>
                         <div class="footer-link">
                             <div class="footer-link__title">Контакты:</div>
-                            <a target="_blank" href="tel:+998975888855">+998 97 588 88 55</a>
+                            <a target="_blank" href="tel:+998975888855">+998 97 588 88 55</a><br>
+                            <a target="_blank" href="tel:+998975588855">+998 97 55 888 55</a>
                         </div>
                         <div class="footer-link">
                             <div class="footer-link__title">E-mail:</div>
